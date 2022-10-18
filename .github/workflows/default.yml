@@ -27,6 +27,6 @@ jobs:
           api_key: ${{ secrets.THUNDRA_APIKEY }}
           test_format: JUNIT
           test_framework: JUNIT
-          test_path: ./build/test-results/test/TEST-io.thundra.foresight.quotes.QuotesServiceTest.xml
+          test_path: ./build/test-results/test
           coverage_format: JACOCO/XML
-          coverage_path: ./build/reports/jacoco/test/jacocoTestReport.xml
+          coverage_path: ./build/reports/jacoco/test
