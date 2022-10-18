@@ -1,0 +1,12 @@
+### Create new quote
+POST http://localhost:8080/quotes
+Content-Type: application/json
+
+{
+    "id": 1,
+    "quote": "Do. Or do not. There is no try."
+}
+
+### Get a quote by ID
+GET http://localhost:8080/quotes/1
+Accept: application/json
