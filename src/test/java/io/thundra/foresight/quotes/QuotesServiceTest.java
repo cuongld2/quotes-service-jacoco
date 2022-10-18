@@ -25,7 +25,7 @@ import java.util.stream.Stream;
 @Testcontainers
 public class QuotesServiceTest {
     @Container
-    private static final GenericContainer<?> redis = new GenericContainer<>(DockerImageName.parse("redis:6")).withExposedPorts(6379);
+    private final GenericContainer<?> redis = new GenericContainer<>(DockerImageName.parse("redis:6")).withExposedPorts(6379);
 
     private QuotesService sut;
 
